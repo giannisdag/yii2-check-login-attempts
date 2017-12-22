@@ -1,6 +1,6 @@
 <?php
 
-namespace giannisdag\loginattempts\src\behaviors;
+namespace giannisdag\src\behaviors;
 
 use common\models\LoginAttempt;
 use yii\base\Model;
