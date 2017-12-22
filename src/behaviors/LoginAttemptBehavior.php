@@ -1,6 +1,6 @@
 <?php
 
-namespace giannisdag\loginattempts\behaviors;
+namespace giannisdag\loginattempts\src\behaviors;
 
 use common\models\LoginAttempt;
 use yii\base\Model;
@@ -45,9 +45,9 @@ class LoginAttemptBehavior extends \yii\base\Behavior
             }
             $this->_attempt->amount += 1;
             if ($this->_attempt->amount >= $this->attempts)
-                $this->_attempt->reset_at = time() + $this->disableDuration;  //date('r', strtotime('+' . $this->disableDuration . ' seconds'));
+                $this->_attempt->reset_at = time() + $this->disableDuration;
             else
-                $this->_attempt->reset_at = time() + $this->duration; // date('r', strtotime('+' . $this->duration . ' seconds'));
+                $this->_attempt->reset_at = time() + $this->duration;
             $this->_attempt->save();
         }
     }

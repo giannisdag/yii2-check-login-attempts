@@ -1,6 +1,6 @@
 <?php
 
-namespace giannisdag\loginattempts\models;
+namespace giannisdag\loginattempts\src\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;

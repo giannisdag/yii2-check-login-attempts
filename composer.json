@@ -1,0 +1,19 @@
+{
+    "name": "giannisdag/yii2-check-login-attempts",
+    "description": "Disable login after multiple failures.",
+    "keywords": ["yii2", "behavior"],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "authors": [
+        {
+            "name": "Giannis Dagkoulis",
+            "email": "giannisdag@yahoo.gr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "giannisdag\\loginattempts\\": "src/"
+        }
+    }
+}
