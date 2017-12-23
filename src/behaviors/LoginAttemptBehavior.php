@@ -1,6 +1,6 @@
 <?php
 
-namespace giannisdag\src\behaviors;
+namespace giannisdag\yii2CheckLoginAttempts\behaviors;
 
 use common\models\LoginAttempt;
 use yii\base\Model;
@@ -14,9 +14,9 @@ class LoginAttemptBehavior extends \yii\base\Behavior
     public $usernameAttribute = 'email';
     public $passwordAttribute = 'password';
     public $message = 'You have exceeded the password attempts.';
-    
+
     private $_attempt;
-    
+
     public function events()
     {
         return [
