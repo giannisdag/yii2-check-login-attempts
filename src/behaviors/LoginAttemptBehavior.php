@@ -2,7 +2,7 @@
 
 namespace giannisdag\yii2CheckLoginAttempts\behaviors;
 
-use common\models\LoginAttempt;
+use giannisdag\yii2CheckLoginAttempts\models\LoginAttempt;
 use yii\base\Model;
 
 
