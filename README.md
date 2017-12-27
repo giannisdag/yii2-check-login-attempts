@@ -5,8 +5,7 @@ based on https://github.com/ethercreative/yii2-login-attempts-behavior
 
 ## Installation
 
-The preferred way to install this extension is through composer.
-Either run
+The preferred way to install this extension is through composer. Either run
 
 composer require giannisdag/yii2-check-login-attempts
 
