@@ -19,7 +19,7 @@ to the require section of your composer.json file.
 Run the following migration
 
 ```php
-php yii migrate --migrationPath="vendor/giannisdag/yii2-check-login-attempts/src/migrations"  --interactive=0
+php yii migrate --migrationPath="@vendor/giannisdag/yii2-check-login-attempts/src/migrations"  --interactive=0
 ```
 Add the behavior to your login model
 ```php
