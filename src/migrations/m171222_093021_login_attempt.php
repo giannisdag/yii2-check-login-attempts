@@ -14,8 +14,10 @@ class m171222_093021_login_attempt extends Migration
 
     public function safeUp()
     {
-        $tableOptions = 'ENGINE=InnoDB';
-
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            $tableOptions = 'ENGINE=InnoDB';
+        }
         $this->createTable(
             '{{%login_attempt}}',
             [
